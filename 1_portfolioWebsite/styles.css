@@ -1,0 +1,612 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles (Apply global styles and fonts here) */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #bbb1b1;
+    color: #fff;
+}
+
+/* Navigation Menu Styling */
+
+.navbar {
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu-btn.active:before {
+    content: "\f00d";
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: crimson;
+}
+
+/* Home Section Styling */
+
+.home {
+    display: flex;
+    background: url("banner.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home h1.text-1 {
+    font-size: 27px;
+    color: #111;
+}
+
+.home h2.text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: #111;
+}
+
+.home h3.text-3 {
+    color: #111;
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home h3.text-3 span {
+    color: crimson;
+    font-weight: 500;
+}
+
+.home a.btn {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.home a.btn:hover {
+    color: crimson;
+    background: none;
+}
+
+/* About Section Styling */
+
+.about {
+    /* Styles for the about section */
+    background-color: #b6afaf; /* Background color for the about section */
+    padding: 40px 0; /* Padding for top and bottom spacing */
+}
+
+.about .title::after {
+    content: ": Who I am?????";
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+/* Education Section Styling */
+
+.theme {
+    /* Styles for the education section */
+    background-color: #fff; /* Background color for the education section */
+    padding: 40px 0; /* Padding for top and bottom spacing */
+    color: #333; /* Text color for the education section */
+}
+
+.theme .title {
+    color: #111;
+}
+
+.education-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.education {
+    color: #fff;
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.education span {
+    color: crimson;
+    font-size: 4rem;
+    transition: all 300ms ease-in-out;
+}
+
+.education h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.education h4 {
+    color: #111;
+}
+
+.education p {
+    font-size: 1.4rem;
+    color: #111;
+}
+
+.education:hover {
+    background-color: crimson;
+}
+
+.education:hover p {
+    color: #fff;
+}
+
+.education:hover h2 {
+    color: #fff;
+}
+
+.education:hover b {
+    color: #fff
+}
+
+.education span:hover {
+    color: #fff;
+}
+
+.education:hover span {
+    color: #fff;
+}
+
+/* Services Section Styling */
+
+.services {
+    /* Styles for the services section */
+    background-color: #8d8888; /* Background color for the services section */
+    padding: 40px 0; /* Padding for top and bottom spacing */
+    color: #f7f3f3; /* Text color for the services section */
+}
+
+.services .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.services .title::after,
+.teams .title::after {
+    content: ": Software Development, Database Design and Management, E-commerce Solutions, API Development and Integration, Open Source Contributions";
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: crimson;
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Skills Section Styling */
+
+.skills {
+    background-color: #b6b2b2; /* Background color for the skills section */
+    padding: 40px 0; /* Padding for top and bottom spacing */
+}
+
+.skills .title::after {
+    content: "I Know"; /* Title content */
+    display: block;
+    font-size: 28px; /* Title font size */
+    margin-top: 20px; /* Spacing between title and content */
+    font-weight: bold; /* Title font weight */
+    color: #333; /* Title color */
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: crimson;
+    background: none;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: rgb(122, 117, 117);
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills-content .right .css::before {
+    width: 70%;
+}
+
+.skills-content .right .js::before {
+    width: 40%;
+}
+
+.skills-content .right .cpp::before {
+    width: 90%;
+}
+
+.skills-content .right .mysql::before {
+    width: 60%;
+}
+
+/* Teams Section Styling */
+
+.teams {
+    /* Styles for the teams section */
+    background-color: #f9f9f9; /* Background color for the teams section */
+    padding: 40px 0; /* Padding for top and bottom spacing */
+}
+
+.teams .title::after {
+    content: "who with me";
+}
+
+.teams .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover {
+    background: crimson;
+}
+
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.teams .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
+
+/* Contact Section Styling */
+
+.contact {
+    /* Styles for the contact section */
+    background-color: #979090; /* Background color for the contact section */
+    padding: 40px 0; /* Padding for top and bottom spacing */
+
+    /* Center the content horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #181717;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid rgb(214, 207, 207);
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: crimson;
+}
+
+.contact .right form .button .btn {
+    display: inline-block;
+    background: crimson;
+    color: #fcf3f3;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .button .btn:hover {
+    background: none;
+    color: crimson;
+    border: 2px solid rgb(247, 8, 56);
+}
+
+.footr{
+    background-color: #333;
+    color: red;
+}
