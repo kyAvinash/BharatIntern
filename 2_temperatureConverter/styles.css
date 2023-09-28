@@ -1,0 +1,69 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(192, 240, 129) 0%, rgb(197, 40, 103) 100%, rgb(41, 119, 10) 100%);
+    font-family: monospace, sans-serif;
+    color: #5097b6;
+}
+
+/* Container styles */
+.container {
+    background: rgba(172, 233, 245, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 10px rgba(240, 2, 2, 0.3);
+    width: 85%;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Main content styles */
+main {
+    width: 100%;
+}
+
+.temp-container {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #eebdbd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(54, 73, 77, 0.3);
+    border-color: rgba(240, 204, 204, 0.6);
+    color: rgb(15, 15, 58);
+}
+
+input::placeholder {
+    color: rgb(124, 22, 42);
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #f7f2f2;
+}
