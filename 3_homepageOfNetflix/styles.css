@@ -138,23 +138,402 @@ body {
 
 
 /* Content Rows */
-.content {
-    padding: 20px;
+.TV {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
     color: #fff;
+    padding: 230px 0;
+    margin-top: 10px;
+    position: relative;
 }
 
-.content h2 {
+.TVi {
+   
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 115px;
+    left: 100px;
+}
+
+.TVi h1 {
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-align: left; 
+}
+
+.TVi p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    text-align: left; 
+}
+.TVimg {
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 55px;
+    right: 150px;
+}
+
+
+/* Content Rows */
+.Offline {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 230px 0;
+    margin-top: 10px;
+    position: relative;
+}
+
+.OfflineT {
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+}
+
+
+.OfflineMob {
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 110px;
+    right: 190px;
+}
+
+.OfflineMob h1 {
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-align: left; 
+}
+
+.OfflineMob p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    text-align: left; 
+}
+
+
+/* Content Rows */
+.everywhere {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 230px 0;
+    margin-top: 10px;
+    position: relative;
+}
+
+.everywherei {
+   
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 115px;
+    left: 100px;
+}
+
+.everywherei h1 {
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-align: left; 
+}
+
+.everywherei p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    text-align: left; 
+}
+.everywhereimg {
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 55px;
+    right: 150px;
+}
+
+
+
+/* Content Rows */
+.kids {
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 230px 0;
+    margin-top: 10px;
+    position: relative;
+}
+
+.kidsT {
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+}
+
+
+.kidsMob {
+    color: #fff;
+    padding: 20px 30px;
+    position: absolute;
+    top: 140px;
+    right: 190px;
+}
+
+.kidsMob h1 {
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-align: left; 
+}
+
+.kidsMob p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    text-align: left; 
+}
+
+
+
+/* frequently ask question */
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    margin-top: 10px;
+}
+
+.container h1 {
+    color: #fff;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-    }
+/* Style the FAQ details */
+details {
+    background-color: #303030;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
-    .navbar li {
-        margin-bottom: 10px;
-    }
+details summary {
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    transition: height 1s ease;
+    cursor: pointer;
+    background-color: #303030;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary:after {
+    content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after {
+    content: "\00D7";
+}
+
+details div {
+    padding: .5em 1em;
+    text-align: left;
+}
+
+
+/* -------------------------------------------*/
+
+.container p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.container form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.container input[type="email"] {
+    padding: 15px 50px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 5px;
+    background-color: #b3b0b0;
+    color: #fff;
+}
+
+.container button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px 5px;
+}
+
+
+/* footer language button */
+
+.footer-container .language-dropdown {
+    position: relative;
+}
+
+.footer-container .language-button {
+    background-color: transparent lightslategray;
+    color: #fff;
+    border: 10px;
+    cursor: pointer;
+    padding: 20px 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-container .language-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer-container .language-option {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footer-container .language-dropdown:hover .language-options {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/*  */
+
+/* CSS for the footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.footer-section {
+    padding: 10px;
+    border-right: 0px solid #555;
+    text-align: left;
+    margin-left: 150px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropdown-button {
+    background-color: #363434;
+    color: #fff;
+    border: 10px;
+    border-color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #363434;
+    min-width: 100px;
+    z-index: 1;
+}
+
+/* Style for the dropdown options (links) */
+.dropdown-content a {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for dropdown options */
+.dropdown-content a:hover {
+    background-color: #e50914;
+}
+
+/* Show the dropdown content when the button is hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
